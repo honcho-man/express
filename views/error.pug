@@ -1,0 +1,90 @@
+extends layout
+
+block content
+  .container.p-0
+     header.container-fluid
+      .row
+        .brand.col-3.error#TitleAlias
+          a(href="/")
+            img(src='images/omes-logo.jpg' alt='OMES LOGO')
+        .navbar.d-none.col-9.text-center.d-none-small
+           ul
+            li(style="width:50px;").d-flex
+              .myDIV.m-1
+                a(href="/") Home              
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:60px;").d-flex
+              .myDIV.m-1
+                a(href="/about") About 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/services") Services 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/gallery") Gallery 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:90px;").d-flex
+              .myDIV.m-1
+                a(href="/products") Products 
+              .active-nav.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/contact") Contact 
+              .hide.m-1
+                i.lni.lni-bolt
+                  
+        .menu-icon.d-none.col-9.text-center.d-none-large
+          .menu-toggle(data-js='menu-toggle')
+            button
+              span.d-flex
+                span.green.m-1
+                  i.lni.lni-bolt
+                p.m-1 MENU
+    
+  .hidden-panel.d-none
+      span.hidden-panel-close(data-js='hidden-panel-close') Close
+      .hidden-panel-content
+        nav.hidden-panel-nav
+          h3 NAVIGATION
+            span.green .
+          ul
+            li(style="width:50px;").d-flex
+              .myDIV.m-1
+                a(href="/") Home              
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:60px;").d-flex
+              .myDIV.m-1
+                a(href="/about") About 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/services") Services 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/gallery") Gallery 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:90px;").d-flex
+              .myDIV.m-1
+                a(href="/products") Products 
+              .active-nav.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/contact") Contact 
+              .hide.m-1
+                i.lni.lni-bolt
+  h1= message
+  h2= error.status
+  pre #{error.stack}

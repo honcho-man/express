@@ -1,0 +1,224 @@
+body {
+    font-family: 'Montserrat' !important;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    outline: none
+}
+
+button:focus {
+    outline: none !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url("/fonts");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&display=swap');
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 800px) {
+    .d-none-small {
+        display: none !important;
+    }
+    .headline {
+        padding-left: 20px !important;
+    }
+    .slider-body {
+        height: 50vh;
+    }
+    .gallery {
+        height: 100%;
+    }
+    .gallery img {
+        height: 100%;
+    }
+    .headline-tag {
+        position: absolute;
+        top: 0;
+        padding-top: 100px;
+        height: 50vh;
+        background: #0000007a;
+        margin-top: 47px;
+    }
+    .order-btn:hover {
+        color: #999;
+        border: 1px solid white;
+        background: white;
+        transition: ease-in-out .50s;
+    }
+}
+
+.gallery img {
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* For desktop: */
+
+@media only screen and (min-width: 800px) {
+    .d-none-large {
+        display: none !important;
+    }
+    .headline {
+        padding-left: 5.5em !important;
+        padding-top: 140px;
+        font-size: x-large;
+    }
+    .gallery {
+        height: 100%;
+    }
+    .gallery img {
+        height: 100%;
+    }
+    .slider-body {
+        height: 90vh;
+    }
+    .headline-tag {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background: #0000007a;
+    }
+    .order-btn {
+        font-size: smaller;
+        padding: 5px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .order-btn:hover {
+        color: white;
+        border: 1px solid #211f20;
+        background: #211f20;
+        transition: ease-in-out .50s;
+    }
+}
+
+.white {
+    color: white;
+}
+
+.header {
+    background-color: #211f20;
+    color: white;
+    max-height: 50px;
+}
+
+.brand {
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.brand img {
+    display: block;
+    max-width: 200px;
+    max-height: 45px;
+    width: auto;
+    height: auto;
+}
+
+.navbar {
+    max-height: 50px;
+    padding: 0 !important;
+}
+
+.menu-icon {
+    padding: 9px;
+    font-size: x-large;
+    display: flex;
+    justify-content: right;
+    float: right;
+}
+
+.menu-icon i {
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar li {
+    padding: 5px;
+    padding-top: 10px;
+    width: 100% !important;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    color: white !important;
+}
+
+.navbar a:hover,
+.hide {
+    -webkit-animation: text-flicker-in-glow 4s linear both !important;
+    animation: text-flicker-in-glow 4s linear both !important;
+}
+
+.navbar-menu {
+    border: 2px solid green;
+    background-color: rgb(33, 31, 32);
+    color: white;
+}
+
+.navbar-menu li {
+    cursor: pointer;
+}
+
+.navbar-menu li:hover {
+    color: yellowgreen;
+    -webkit-animation: text-flicker-in-glow 4s linear both;
+    animation: text-flicker-in-glow 4s linear both;
+}
+
+.Closepanel {
+    height: 100vh;
+    background: transparent;
+    position: absolute;
+    z-index: 500;
+    background: #0000007a;
+}
+
+.headline {
+    height: 100%;
+}
+
+.headline-1 {
+    text-transform: uppercase;
+}
+
+.headline-2 {
+    text-transform: capitalize;
+    color: rgba(218, 218, 218, 0.836);
+}
+
+.slider-body {
+    background: black;
+}
+
+.headline-3 {
+    padding-left: 5.5em !important;
+    padding-top: 140px;
+    font-size: x-large;
+}
+
+.headline-tag {
+    padding-top: 150px;
+}

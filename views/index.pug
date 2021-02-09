@@ -1,0 +1,105 @@
+extends layout
+
+block content
+  .container.p-0
+     header.container-fluid
+      .row
+        .brand.col-2.home#TitleAlias
+          a(href="/")
+            img(src='images/omes-logo.jpg' alt='OMES LOGO')#Brand
+        .navbar.col-10.text-center.d-none-small
+           ul
+            li(style="width:50px;").d-flex
+              .myDIV.m-1
+                a(href="/") Home              
+              .active-nav.m-1
+                i.lni.lni-bolt
+            li(style="width:60px;").d-flex
+              .myDIV.m-1
+                a(href="/about") About 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/services") Services 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/gallery") Gallery 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:90px;").d-flex
+              .myDIV.m-1
+                a(href="/products") Products 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/contact") Contact 
+              .hide.m-1
+                i.lni.lni-bolt        
+            li.text-center.col-4.d-none-small
+              button(onmouseover="Yellowgreen2(this)" onmouseout="Blacken2(this)").order-btn#OrderBtn2 ORDER NOW 
+                span.order-bolt#OrderBolt2
+                  i.lni.lni-bolt
+        .menu-icon.col-10.text-center.d-none-large
+          .menu-toggle(data-js='menu-toggle')
+            button
+              span.d-flex
+                span.green.m-1
+                  i.lni.lni-bolt
+                p.m-1 MENU
+  main.slider-body.container-fluid.p-0
+    .gallery 
+      img(src="/images/bg-1.jpg", alt="")
+    .container-fluid.headline-tag
+      .row
+        .headline.col-md-4.col-lg-4.col-sm-12
+          h1.white.headline-1 oladmuni
+          h5.headline-2 electrical services 
+        .headline-3.col-8.d-none-small.white
+          p We're experienced
+
+    
+  .hidden-panel.d-none-large
+      span.hidden-panel-close(data-js='hidden-panel-close') Close
+      .hidden-panel-content
+        nav.hidden-panel-nav
+          h3 NAVIGATION
+            span.green .
+          ul
+            li(style="width:50px;").d-flex
+              .myDIV.m-1
+                a(href="/") Home              
+              .active-nav.m-1
+                i.lni.lni-bolt
+            li(style="width:60px;").d-flex
+              .myDIV.m-1
+                a(href="/about") About 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/services") Services 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/gallery") Gallery 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:90px;").d-flex
+              .myDIV.m-1
+                a(href="/products") Products 
+              .hide.m-1
+                i.lni.lni-bolt
+            li(style="width:80px;").d-flex
+              .myDIV.m-1
+                a(href="/contact") Contact 
+              .hide.m-1
+                i.lni.lni-bolt
+          .text-center.container-fluid
+            button(onmouseover="Yellowgreen(this)" onmouseout="Blacken(this)").order-btn#OrderBtn ORDER NOW 
+              span.order-bolt#OrderBolt
+                i.lni.lni-bolt

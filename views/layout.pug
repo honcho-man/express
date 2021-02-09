@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    meta(UTF-8)
+    meta(name='viewport, content=width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    title= title
+    link(rel='icon', type="image/png", sizes="76x76", href='images/favicon.ico')
+    link(rel='icon', type="image/x-icon",sizes="76x76", href='images/favicon.ico')
+    link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/LineIcons.css')
+    link(rel='stylesheet', href='/stylesheets/animation.css')
+    link(rel='stylesheet', href='/stylesheets/menu.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/slider.css')
+    link(rel='stylesheet', href='https://cdn.lineicons.com/2.0/LineIcons.css')
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&display=swap" rel="stylesheet")
+  script(src='/javascripts/bootstrap.min.js')
+  script(src='/javascripts/jquery.js')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', media='all')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', rel='stylesheet', media='all')
+
+  body
+    div(onclick="Closemypanel()").container-fluid.Closepanel#CloseMenu.p-0.m-0.hide
+
+          
+    block content
+    script(src="/javascripts/menu.js")
+    script(src="/javascripts/slider.js")
+
